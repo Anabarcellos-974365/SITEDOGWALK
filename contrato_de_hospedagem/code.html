@@ -243,10 +243,10 @@
 <span class="material-symbols-outlined">check_circle</span>
                                     ACEITAR
                                 </button>
-<button class="w-full border border-primary text-primary py-3 px-gutter rounded-lg font-label-md text-label-md hover:bg-primary/5 transition-all active:scale-95 flex items-center justify-center gap-2">
+<a href="../dogwalk_bras_lia_services_and_booking_flow/code.html"><button class="w-full border border-primary text-primary py-3 px-gutter rounded-lg font-label-md text-label-md hover:bg-primary/5 transition-all active:scale-95 flex items-center justify-center gap-2">
 <span class="material-symbols-outlined">cancel</span>
                                     CANCELAR
-                                </button>
+                                </button></a>
 </div>
 </div>
 <!-- Progress Widget -->
@@ -297,14 +297,14 @@
 </footer>
 <!-- BottomNavBar (Mobile Only) -->
 <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-surface px-2 pb-safe pt-2 rounded-t-xl shadow-[0_-2px_10px_rgba(0,0,0,0.05)] border-t border-outline-variant">
-<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all p-2">
+<a href="../home_dogwalk_bras_lia/code.html" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all p-2">
 <span class="material-symbols-outlined">home</span>
 <span class="font-label-sm text-label-sm mt-1">Home</span>
-</button>
-<button class="flex flex-col items-center justify-center text-primary font-bold bg-primary-container/30 rounded-full px-4 py-1 transition-all">
+</a>
+<a href="../dogwalk_bras_lia_services_and_booking_flow/code.html" class="flex flex-col items-center justify-center text-primary font-bold bg-primary-container/30 rounded-full px-4 py-1 transition-all">
 <span class="material-symbols-outlined">search</span>
 <span class="font-label-sm text-label-sm mt-1">Serviços</span>
-</button>
+</a>
 <button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all p-2">
 <span class="material-symbols-outlined">calendar_month</span>
 <span class="font-label-sm text-label-sm mt-1">Agenda</span>
@@ -337,7 +337,8 @@
                 acceptBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> PROCESSANDO...';
                 setTimeout(() => {
                     alert('Contrato aceito com sucesso! Redirecionando para o pagamento...');
-                    acceptBtn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> ACEITO';
+                  acceptBtn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> ACEITO';
+                    setTimeout(() => { window.location = '../canine_trust/code.html'; }, 500);
                 }, 1500);
             }
         });
