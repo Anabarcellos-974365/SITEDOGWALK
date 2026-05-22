@@ -334,11 +334,10 @@
         // Click effect
         acceptBtn.addEventListener('click', () => {
             if (!acceptBtn.disabled) {
-                acceptBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> PROCESSANDO...';
-                setTimeout(() => {
-                    alert('Contrato aceito com sucesso! Redirecionando para o pagamento...');
-                  acceptBtn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> ACEITO';
-                   setTimeout(() => { window.location = '../dogwalk_bras_lia_services_and_booking_flow/code.html'; }, 500);
+               acceptBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> PROCESSANDO...';
+        setTimeout(() => {
+                    acceptBtn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> ACEITO';
+                    setTimeout(() => { window.location = '../dogwalk_bras_lia_services_and_booking_flow/code.html'; }, 500);
                 }, 1500);
             }
         });
