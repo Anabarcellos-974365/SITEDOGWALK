@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DogWalk Brasília - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1c1c",
+                        "error-container": "#ffdad6",
+                        "primary": "#06619c",
+                        "on-secondary-fixed": "#2a1800",
+                        "tertiary-container": "#298732",
+                        "background": "#fbf9f8",
+                        "on-tertiary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "outline": "#717881",
+                        "primary-fixed-dim": "#9bcbff",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary-fixed": "#99f894",
+                        "inverse-surface": "#303030",
+                        "on-tertiary-fixed": "#002204",
+                        "on-surface": "#1b1c1c",
+                        "tertiary-fixed-dim": "#7edb7b",
+                        "on-surface-variant": "#414750",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#0a629e",
+                        "secondary-container": "#feb959",
+                        "surface": "#fbf9f8",
+                        "inverse-primary": "#9bcbff",
+                        "surface-container-highest": "#e4e2e1",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e4e2e1",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-primary-container": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#feb959",
+                        "on-secondary-container": "#734a00",
+                        "secondary": "#835400",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-container": "#fffeff",
+                        "on-primary-fixed-variant": "#004a79",
+                        "tertiary": "#006d1b",
+                        "secondary-fixed": "#ffddb5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae8e7",
+                        "outline-variant": "#c1c7d1",
+                        "primary-fixed": "#d0e4ff",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#337ab7",
+                        "surface-container": "#f0eded",
+                        "on-primary-fixed": "#001d34",
+                        "on-secondary-fixed-variant": "#643f00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "64px",
+                        "lg": "40px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "container-max": "1200px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Work Sans"],
+                        "label-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-md": ["Work Sans"],
+                        "display-lg": ["Work Sans"],
+                        "headline-lg": ["Work Sans"],
+                        "headline-lg-mobile": ["Work Sans"],
+                        "label-sm": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center px-4 py-3 w-full fixed top-0 z-50 bg-primary shadow-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary text-2xl" data-icon="pets">pets</span>
+<h1 class="font-headline-md text-headline-md-mobile md:text-headline-md text-on-primary font-bold tracking-tight">DogWalk Brasília</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex font-label-md text-label-md text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-colors px-3 py-1 rounded">Entrar</button>
+<span class="material-symbols-outlined text-on-primary cursor-pointer active:scale-95 duration-100" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="pt-[64px] pb-[80px]">
+<!-- Hero Section -->
+<section class="relative w-full h-[450px] md:h-[600px] flex items-center justify-center overflow-hidden">
+<img alt="Happy dogs running in a park" class="absolute inset-0 w-full h-full object-cover" data-alt="A professional, high-key photograph of two happy, energetic dogs running through a sun-drenched park in Brasília. The lighting is warm and golden, characteristic of a late afternoon sun, creating a welcoming and reliable atmosphere. The background shows soft-focus greenery and local architectural silhouettes, maintaining a corporate yet friendly aesthetic with a primary blue and clean white color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZqSxoTypzsP3jge49x8ZgBzrpTy4kI7zoYbaERSR_C3OBLyUVavSY1Z3e3GJWAUyS9DlfoSYdrNFzGCD867ZxAg4fYRiRohSqIUrN5e9kG4Q27gQgXULzmj2sG_Mrf7BSYyGCw8zUtMybjmoP6pzZ41tbJCOTUTe66TxZ2rCbqw88Fl-s63hzRGDoJ-HwyFqhidhqISwOzR5BDj19udZ1YYxEvE1Fw2OWsyyTontZPytpW6XCnJ3h0aYodIYtdCdXd6dSB0rBTecv"/>
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative z-10 container mx-auto px-margin-mobile md:px-gutter text-center">
+<div class="inline-block mb-6 p-4 rounded-full bg-white/20 backdrop-blur-md border border-white/30 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="dog">pets</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mb-6 max-w-2xl mx-auto leading-tight text-shadow-sm">
+                    Solicite seu orçamento e as passeadas de cães em Brasília DF
+                </h2>
+<!-- Search Bar -->
+<div class="max-w-3xl mx-auto mt-8">
+<div class="bg-white p-2 rounded-xl shadow-xl flex flex-col md:flex-row items-center gap-2">
+<div class="flex items-center w-full px-4 border-b md:border-b-0 md:border-r border-outline-variant py-2">
+<span class="material-symbols-outlined text-primary mr-2" data-icon="search">search</span>
+<input class="w-full border-none focus:ring-0 font-body-md text-on-surface-variant bg-transparent" placeholder="Pesquise Cidade, Bairro, Email" type="text"/>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md hover:brightness-110 transition-all active:scale-95">
+                            Buscar
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Categories - Bento Grid Style -->
+<section class="container mx-auto px-margin-mobile md:px-gutter py-xl">
+<div class="flex flex-col gap-base mb-lg">
+<h3 class="font-headline-md text-headline-md text-primary">Nossos Serviços</h3>
+<div class="h-1 w-20 bg-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Hospedagem -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-white border border-outline-variant hover:shadow-lg transition-all cursor-pointer">
+<div class="h-64 overflow-hidden">
+<img alt="Pet hosting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A cozy, high-end pet boarding interior featuring a comfortable dog bed, clean minimalist decor, and a calm golden retriever resting peacefully. The space is illuminated by soft natural light from a large window, conveying a sense of professional care and premium hospitality. The color scheme is dominated by clean whites and warm wood tones, consistent with a modern corporate pet service brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpEpVPDGWkt4f3ho85nbgvXoUVTDtzRDT4Vc8egw1tPBO3NkpOa08nOMtKn5ndvn94Fj4PBmEy0XTAt4_IVk9ZnOzTtwf0O_Y38b2nh8MprYVq7-C5iJKWoQWdL6k8iGrqfdHpwt-dgDfxsLScMjDgVcuZiM6k2u5IeM-hHHNs4l-AnCWuvnF4mWNPTZaUXYJ8R7wWA2KHxfesf3G5uJccW9Qhb9KRVhHbc_bWVtalnh6RfYmxng51syyYG--tKyzBRM1oS_HEBymX"/>
+</div>
+<div class="p-md bg-white">
+<div class="flex justify-between items-center mb-2">
+<h4 class="font-headline-md text-primary">Hospedagem para Pets</h4>
+<span class="material-symbols-outlined text-secondary" data-icon="home">home</span>
+</div>
+<p class="text-on-surface-variant font-body-md">Seu pet em boas mãos enquanto você viaja.</p>
+</div>
+</div>
+<!-- Passeio -->
+<div class="group relative overflow-hidden rounded-xl bg-white border border-outline-variant hover:shadow-lg transition-all cursor-pointer">
+<div class="h-64 overflow-hidden">
+<img alt="Dog walking" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional dog walker in Brasília strolling through a lush green park with three happy dogs of different breeds. The scene is bright and cheerful, with clear blue skies and soft sunlight filtering through the trees. The walker wears a professional branded vest, reinforcing the corporate reliability of the DogWalk service. The aesthetic is clean, energetic, and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDEpqcUTYKkOzA5HTaOgSVGE_yrk0AqOOLD6cPBxaFuIu3PZuf7s-2ftmWUX_rC3H52jpw4CQ-rDBifdFVLwZuJiOtMW7wT9JAQIUBnxwfaXf6jkfZs54_nQw83xRZH8w91-D_FGMh62ai_eYRukqDZ8kwU2iegtpXb8bbR7XUEK_HLUKI8K74o89_wCUcYxSma1u0-a9eSCHiBAlUU3CHZhE3Xh05x1koGXFXW78LZmakm1ABxNQt0AHc3w-4jTCyyRaSwDHjdOxZ"/>
+</div>
+<div class="p-md">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="directions_walk">directions_walk</span>
+<h4 class="font-headline-md text-primary text-[20px] mb-1">Passeio com Cães</h4>
+<p class="text-on-surface-variant text-label-sm font-label-sm">Saúde e diversão diária.</p>
+</div>
+</div>
+<!-- Creche -->
+<div class="group relative overflow-hidden rounded-xl bg-white border border-outline-variant hover:shadow-lg transition-all cursor-pointer">
+<div class="h-64 overflow-hidden">
+<img alt="Pet daycare" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A vibrant and safe indoor pet daycare facility with multiple dogs playing together under professional supervision. The room is filled with colorful pet-safe toys and high-quality rubber flooring. The lighting is bright and even, highlighting the cleanliness and safety of the environment. The visual style is professional, clinical yet warm, and highly trustworthy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_UzV75x0f2zzVl65ZCHXdoVUH8qupLGPNkD5xQvHGoQFcJCd4aZqLCDTp3v3nxfxZ1o17lCbEPXlVzUZP5ZwiUvBmwWqBvFY1qfvFC1Em-gAQMmcPqGH2A4_E0moJTEHDyDltpzU94EAkuCt2zHREm6bEH7TzA_cHmDp-je3IpJ8Pugwp72b0dr4o86OFqisbiy4jha2Dz1gNShG3ulrBF3CTXsbrDGRq8-Rbq5zPKYmM-us7rIpFnGAKgUggMtynKzi4B4wfk6hC"/>
+</div>
+<div class="p-md">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="potted_plant">potted_plant</span>
+<h4 class="font-headline-md text-primary text-[20px] mb-1">Creche para Pets</h4>
+<p class="text-on-surface-variant text-label-sm font-label-sm">Socialização e gasto de energia.</p>
+</div>
+</div>
+<!-- Banho e Tosa (Wide Mobile) -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-white border border-outline-variant hover:shadow-lg transition-all cursor-pointer flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 h-64 md:h-auto overflow-hidden">
+<img alt="Pet grooming" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional pet grooming station with a clean, white poodle being gently washed by a skilled groomer. The setting is sterile yet welcoming, featuring high-end grooming equipment and primary blue accents. The lighting is crisp and bright, emphasizing the professional hygiene standards of the service. The mood is calm and professional, focusing on the quality of care provided." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP7cdexeWlQZ956pxa-L6AjKPqA7FhicLzNjfJllMfPhfLDnrXUlQZq8_H-z6_98J2OMEwUCsbNHN9YKDR6MN2KZmi4XxAoMaAbljuoSsrknVqoDR2byCYIJuuPWwU6tVGMeTis97wUBfN4D7d8Wka3Dh1o8tND4mwgPOz7V8fzwClHCyYLK59BqVmcySSCv1T6B1VUpWlVzuui5q5D0o2Bf8QqxKwd5p5iKiQBWu04cnUkQfOeORqdOeKDyitTMv3PwtNaDYx1lD3"/>
+</div>
+<div class="w-full md:w-1/2 p-md flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary" data-icon="shower">shower</span>
+<h4 class="font-headline-md text-primary">Banho e Tosa</h4>
+</div>
+<p class="text-on-surface-variant font-body-md mb-4">Higiene completa com os melhores profissionais da capital.</p>
+<button class="self-start text-primary font-label-md hover:underline flex items-center gap-1">
+                            Ver pacotes <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Trust Factor Card -->
+<div class="md:col-span-2 bg-primary-container/20 border border-primary/20 rounded-xl p-lg flex items-center gap-gutter">
+<div class="hidden sm:flex bg-primary rounded-full p-4 text-on-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="font-headline-md text-primary mb-2">Passeadores Certificados</h4>
+<p class="text-on-surface-variant font-body-md">Todos os nossos profissionais passam por um rigoroso processo de seleção e treinamento.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="bg-surface-container-high py-xl px-margin-mobile">
+<div class="container mx-auto max-w-4xl bg-white p-lg rounded-2xl shadow-md border border-outline-variant flex flex-col md:flex-row items-center gap-lg">
+<div class="flex-1 text-center md:text-left">
+<h3 class="font-headline-md text-primary mb-2">Receba novidades e descontos</h3>
+<p class="text-on-surface-variant font-body-md">Cadastre seu e-mail para ficar por dentro das melhores ofertas para seu pet.</p>
+</div>
+<div class="w-full md:w-auto flex flex-col sm:flex-row gap-2">
+<input class="px-4 py-3 border border-outline-variant rounded-lg focus:ring-primary focus:border-primary" placeholder="Seu melhor e-mail" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md whitespace-nowrap active:scale-95 transition-transform">Cadastrar</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-8 px-4 flex flex-col items-center gap-4 bg-surface-container-highest dark:bg-surface-container-lowest border-t border-outline-variant mb-[72px] md:mb-0">
+<div class="font-headline-md text-primary font-black">DogWalk Brasília</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacidade</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Termos</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Suporte</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Trabalhe Conosco</a>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant text-center">© 2024 DogWalk Brasília. Cuidando com carinho.</p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-surface px-2 pb-safe pt-2 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] rounded-t-xl md:hidden">
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-primary-container/30 rounded-full px-3 py-1 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-label-sm text-label-sm">Serviços</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Perfil</span>
+</a>
+</nav>
+<!-- FAB (Contextual for Home) -->
+<button class="fixed bottom-24 right-6 bg-secondary text-on-secondary-fixed p-4 rounded-full shadow-lg z-40 active:scale-90 transition-transform md:bottom-12">
+<span class="material-symbols-outlined text-3xl" data-icon="add_comment">add_comment</span>
+</button>
+</body></html>
