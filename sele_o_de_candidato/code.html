@@ -146,11 +146,11 @@
 <h1 class="font-headline-md text-headline-md-mobile md:text-headline-md text-on-primary font-bold tracking-tight">DogWalk Brasília</h1>
 </div>
 <div class="flex items-center gap-4">
-<button class="hidden md:flex items-center gap-1 text-on-primary font-bold hover:bg-primary-container/20 px-3 py-1 rounded transition-colors">
+<a href="../dogwalk_bras_lia_services_and_booking_flow/code.html" class="hidden md:flex items-center gap-1 text-on-primary font-bold hover:bg-primary-container/20 px-3 py-1 rounded transition-colors">
 <span class="material-symbols-outlined text-on-primary" data-icon="search">search</span>
 <span class="font-label-md text-label-md">Serviços</span>
-</button>
-<span class="material-symbols-outlined text-on-primary text-3xl cursor-pointer hover:scale-110 transition-transform" data-icon="account_circle">account_circle</span>
+</a>
+<a href="../cadastro/code.html"><span class="material-symbols-outlined text-on-primary text-3xl cursor-pointer hover:scale-110 transition-transform" data-icon="account_circle">account_circle</span></a>
 </div>
 </header>
 <!-- Main Canvas Area -->
@@ -288,18 +288,18 @@
 </div>
 <!-- Back Link -->
 <div class="mt-8 mb-4">
-<button class="flex items-center gap-1 text-primary hover:underline font-label-md text-label-md">
+<a href="../login_selection/code.html"><button class="flex items-center gap-1 text-primary hover:underline font-label-md text-label-md">
 <span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
                 VOLTAR
-            </button>
+            </button></a>
 </div>
 </main>
 <!-- BottomNavBar Section -->
 <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-surface px-2 pb-safe pt-2 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] border-t border-outline-variant">
-<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all">
+<a href="../home_dogwalk_bras_lia/code.html" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all">
 <span class="material-symbols-outlined" data-icon="home">home</span>
 <span class="font-label-sm text-label-sm">Home</span>
-</div>
+</a>
 <div class="flex flex-col items-center justify-center text-primary font-bold bg-primary-container/30 rounded-full px-3 py-1">
 <span class="material-symbols-outlined" data-icon="search" style="font-variation-settings: 'FILL' 1;">search</span>
 <span class="font-label-sm text-label-sm">Serviços</span>
@@ -333,6 +333,7 @@
                     this.innerText = 'Candidato Selecionado';
                     this.classList.remove('bg-tertiary');
                     this.classList.add('bg-tertiary-container');
+                    setTimeout(() => { window.location = '../contrato_de_hospedagem/code.html'; }, 1500);
                     
                     // Show a toast-like notification
                     const toast = document.createElement('div');
